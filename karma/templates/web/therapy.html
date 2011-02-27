@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}L'&Eacute;nergie du Yogi - {% trans "Thérapie" %}{% endblock %}
+
+{% block section %} {% trans "Thérapie" %}{% endblock %}
+
+{% block cTherapy %}active{% endblock %}
+
+{% block left %}
+
+{% endblock %}
+
+{% block right %}
+
+<h2>{% trans "Thérapie" %}</h2>
+<p>
+	{% blocktrans  %}
+	La thérapie de l'émotionel consiste à aider à évacuer les energies négatives, concentrées dans le canal central, perturbant les flux energetiques.
+	{% endblocktrans %}
+</p>
+
+<h2>{% trans "Guérison des Chocs Émotionels" %}</h2>
+<p>
+	{% blocktrans  %}
+	Bien souvent, des symptomes physiques apparaissent dûs à des chocs emotionels tels que deuil, séparation, accident, traumatismes conscients ou inconscients dans
+	l'enfance ou dans le ventre de la mère. 
+	{% endblocktrans %}
+</p>
+
+<div class="hr"></div>
+<p>
+	{% blocktrans  %}
+	Le corps physique peut alors présenter des disfonctionnements tels que sensations d'oppressions, ballonements, gonflement au bas ventre, insomnie, fatigue energétique.
+	{% endblocktrans %}
+</p>
+	
+<div class="hr"></div>
+<p>
+	{% blocktrans %}
+	La conséquence de ce flux énergétique déséquilibré nourrit le mal-etre: afflûts de pensées négatives et récurantes, angoisses, stress, émotions et perceptions négatives, manque de confiance en soi, phénomènes d'addictions...
+	{% endblocktrans %}
+</p>
+
+<h2>{% trans "Équilibrage des Énergies" %}</h2>
+<p>
+	{% blocktrans %}
+	Harmoniser et équilibrer les énergies du corps fera renaître  une  perception positive de notre Être mental et physique.
+	{% endblocktrans %}
+</p>
+
+<div><img src="/img/photos/500/therapy1.png" /></div>
+
+{% endblock %}

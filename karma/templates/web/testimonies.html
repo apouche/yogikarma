@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}L'&Eacute;nergie du Yogi - {% trans "Témoignages" %}{% endblock %}
+
+{% block section %}{% trans "Témoignages" %}{% endblock %}
+
+{% block cTestimonies %}active{% endblock %}
+
+{% block left %}
+
+{% endblock %}
+
+{% block right %}
+
+	{% if testimony %}
+		{% include  testimony %}
+	{% else %}
+
+		<h2>{% trans "Témoignages" %}</h2>
+		<p>
+			{% blocktrans %}
+			Retrouvez dans cette section les témoignages bénévoles de personnes qui ont été soignées par Yogi. 
+			Si, vous aussi, vous voulez ajouter votre témoignage, n'hésitez pas à <a href="mailto:karma@energieduyogi.fr">nous contacter</a>.
+			{% endblocktrans %}
+		</p>
+
+		<div class="hr"></div>
+		<p>
+		{% trans "Lisez les témoignages de" %}	:
+		</p>
+
+		<ol>
+			<li><a href="/testimonies/david">David</a></li>
+			<li><a href="/testimonies/laurent">Laurent</a></li>
+		</ol>
+	
+	{% endif %}
+
+
+
+{% endblock %}

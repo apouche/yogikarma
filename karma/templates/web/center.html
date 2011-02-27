@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}L'&Eacute;nergie du Yogi - {% trans "Centre" %} {% trans "et" %} {% trans "Thérapie" %}{% endblock %}
+
+{% block section %}{% trans "Centre" %} {% trans "et" %} {% trans "Séminaires" %}{% endblock %}
+
+{% block cCenter %}active{% endblock %}
+
+{% block left %}
+{% endblock %}
+
+{% block right %}
+
+<h2>{% trans "Le Centre" %}</h2>
+<p>
+	{% blocktrans %}
+	Situé dans la campagne varoise, dans le calme et la sérénite d'un ancien hameau du 17éme, le centre est à 8 km de la gare TGV Les Arcs/Draguignan.
+	{% endblocktrans %}
+</p>
+<div class="hr"></div>
+<p>
+	{% blocktrans %}
+	Pour vous accueillir, 5 chambres doubles, grand confort. 
+	Les repas végétariens sont pris en commun. Pension complete. Et, quand les beaux jours sont là, la piscine.
+	{% endblocktrans %}
+</p>
+
+<div class="hr"></div>
+<p>
+ 	{% blocktrans %}N'hésitez pas à retrouver <a href="/photos"> notre section photos</a>.{% endblocktrans %}
+</p>
+
+<h2>{% trans "Séance" %}</h2>
+<p>
+	{% blocktrans %}La séance de thérapie dure de 30 à 45 minutes. Elle se deroule en 5 etapes{% endblocktrans %}:
+</p>
+
+<p>
+	<ol>
+		<li>{% blocktrans %}L'origine du blocage émotionel{% endblocktrans %}</li>
+		<li>{% blocktrans %}Recentrage energétique avec cristaux{% endblocktrans %}</li>
+		<li>{% blocktrans %}Enlever la vibration émotionelle négative{% endblocktrans %}</li>
+		<li>{% blocktrans %}Réquilibrage energétique par le son vibratoire{% endblocktrans %}</li>
+		<li>{% blocktrans %}Harmonisation du flot des énergies positives{% endblocktrans %}</li>
+	</ol>
+</p>
+
+<div class="hr"></div>
+<p>{% blocktrans %}Un <a href="/testimonies">forum de témoignage</a> présente differentes personnes avant et aprés l'intervention de Yogi.{% endblocktrans %}</p>
+
+{% endblock %}
