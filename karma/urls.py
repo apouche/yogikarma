@@ -17,7 +17,10 @@ urlpatterns = patterns('',
     # (r'^admin/', include(admin.site.urls)),
 
 	(r'^/?$', 'karma.healing.views.default'),
-	(r'^biography$', 'karma.healing.views.biography'),
+	(r'^biography/?$', 'karma.healing.views.biography'),
+	(r'^therapy/?$', 'karma.healing.views.therapy'),
+	(r'^center/?$', 'karma.healing.views.center'),
+	(r'^testimonies/?(?P<name>\w+)?/?$', 'karma.healing.views.testimonies'),
 	(r'^locale/(?P<language>\w+)/?$', 'karma.healing.views.locale'),
 )
 

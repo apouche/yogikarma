@@ -15,6 +15,24 @@ def biography(request):
 
 	return render_to_response('web/bio.html', {})
 	
+def therapy(request):
+
+	return render_to_response('web/therapy.html', {})
+
+def center(request):
+
+	return render_to_response('web/center.html', {})
+
+def testimonies(request, name):
+
+	t = None
+	if name is not None:
+		t = "testimonies/%s/%s_%s.html" % (name, name, request.session["django_language"])
+		print t
+		
+	return render_to_response('web/testimonies.html', {'testimony': t})
+	
+	
 	
 def locale(request, language):
 	referer = get_referer_view(request, 'default')

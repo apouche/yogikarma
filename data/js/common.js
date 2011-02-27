@@ -50,7 +50,9 @@ var Common = new Hash(
 	
 	adjustMainHeight: function()
 	{
-		var mainHeight = $('complete').offsetHeight- $('top').offsetHeight;
+		var completeHeight = $('complete').offsetHeight - $('top').offsetHeight;
+		var mainHeight = $('main-center').offsetHeight;
+		mainHeight = completeHeight > mainHeight ? completeHeight: mainHeight;
 		var colWidth = $('main-left').offsetWidth;
 		$('main').style.height=mainHeight+'px';
 		$('top-left').style.width=colWidth+'px';

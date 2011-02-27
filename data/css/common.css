@@ -100,8 +100,9 @@ table 	{ width:100%;}
 
 #container			{ color: #EEE; padding:0; min-height:600px; font-size: 11px}
 #container-left 	{ width:45%;  height:588px; vertical-align:top;  background:#444 url('/img/background/plant_bottom.jpg') bottom right no-repeat;}
-#container-right 	{ vertical-align:top; min-height:588px; padding: 0px 5px 10px 0; }
+#container-right 	{ vertical-align:top; min-height:588px; padding: 0px 14px 10px 0; }
 
+#container-left div { text-align:center; margin-right:150px; }
 /********************************************************/
 /*						    Footer 						*/
 /********************************************************/
