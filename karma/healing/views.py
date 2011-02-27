@@ -25,6 +25,9 @@ def center(request):
 
 def testimonies(request, name):
 
+	if 'django_language' not in request.session:
+		request.session["django_language"] = 'fr'
+		
 	t = None
 	if name is not None:
 		t = "testimonies/%s/%s_%s.html" % (name, name, request.session["django_language"])
