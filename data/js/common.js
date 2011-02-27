@@ -69,6 +69,6 @@ var Common = new Hash(
 	{
 		window.onresize = Common.adjustMainHeight;
 		Common.adjustMainHeight();
-		//setTimeout("Common.hideTreeLife()", 1500);
+		setTimeout("Common.hideTreeLife()", 1500);
 	}
 });

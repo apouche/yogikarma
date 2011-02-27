@@ -29,7 +29,7 @@ h1 		{ font: 700 1.5em verdana, sans-serif; display:inline; color:#222; text-tra
 h2 		{ color: #7BD32C; background-color:#515151; width:96%; font: 700 1em verdana, sans-serif; text-transform: uppercase;padding:1px 6px; margin:0;}
 table 	{ width:100%;}
 
-#complete {height:100%; position:absolute; top:0px; z-index:2;}
+#complete {height:100%; position:absolute; top:0px; z-index:0;}
 
 /********************************************************/
 /*						  Top Div						*/
@@ -77,10 +77,23 @@ table 	{ width:100%;}
 	position:absolute; 
 	/*top:20px; 
 		left: 110px;  */
-	background:#c2ad8e url('/img/background/tree_life.jpg') top left no-repeat; 
+	background:#c2ad8e url('/img/background/tree_life_low.jpg') top left no-repeat; 
 	width:100%;
 	height:100%;
-	opacity:0;
+	opacity:100;
+}
+
+#tree-title
+{
+	background-color:#c2ad8e;
+	color:black; 
+	text-align:center;
+	background-opacity:0;
+	position:relative;
+	top: 75px;
+	margin: 0 100px;
+	font: 700 3em verdana, sans-serif;
+	border:solid 1px #8b7c65;
 }
 
 
