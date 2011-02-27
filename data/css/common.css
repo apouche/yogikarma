@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/********************************************************/
+/*						   Tags							*/
+/********************************************************/
+html {height:100%;}
+body 
+{
+	font: 0.62em verdana, arial, sans-serif;
+	color: #000;
+	background: #444;
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	/*margin: 15px auto 20px auto;*/
+}
+
+a  		{ color: #8cef5f; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a img 	{ border:none; }
+a.none 	{ text-decoration:none; }
+
+.clear 	{ clear:both; }
+.hr		{ border-bottom:solid 1px #555;}
+.vspace	{ padding:12px 0;}
+
+h1 		{ font: 700 1.5em verdana, sans-serif; display:inline; color:#222; text-transform: uppercase; }
+h2 		{ color: #7BD32C; background-color:#515151; width:96%; font: 700 1em verdana, sans-serif; text-transform: uppercase;padding:1px 6px; margin:0;}
+table 	{ width:100%;}
+
+#complete {height:100%; position:absolute; top:0px; z-index:2;}
+
+/********************************************************/
+/*						  Top Div						*/
+/********************************************************/
+
+#top { height:30px; overflow:hidden; }
+
+#top-left
+{
+	width:130px;
+	float:left;
+	height:inherit;
+	background: -moz-linear-gradient(left, #399905, #143306);	/* Firefox */
+    background: -webkit-gradient(linear, left top, right top, from(#399905), to(#143306));  /* Chrome, Safari:*/
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#399905', EndColorStr='#143306', GradientType=1); /* MSIE */
+}
+
+#top-right
+{
+	width:110px;
+	float:right;
+	height:inherit;
+	background: -moz-linear-gradient(left, #143306, #399905);	/* Firefox */
+    background: -webkit-gradient(linear, left top, right top, from(#143306), to(#399905));  /* Chrome, Safari:*/
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#143306', EndColorStr='#399905', GradientType=1); /* MSIE */
+}
+
+#top-center 		{ background-color:#84e259; height:inherit; overflow:hidden;  }
+#top-center #leaves { background-image: url('/img/logos/leaves.jpg'); position:relative; float:left; top:3px; width:30px; left:5px; height:inherit;  }
+#top-center #title	{ position:relative; width:30px; left:4px; top: 6px; height:inherit;  }
+
+#top-center #items 	{ float:right; width: auto; margin:1px auto; text-align:right;  }
+
+#items ul 				{ margin: 0; padding: 0; line-height: normal; }
+#items ul li 			{ min-width: 90px; display: inline; float: left; padding: 8px 0; list-style: none; text-align: center; }
+#items ul li a 			{ display: block; text-decoration: none; text-transform: uppercase; padding-bottom: 1.0em; color: #222; }
+#items ul li a:hover,
+#items ul li a.active 	{ font-weight: bold; color: #111; background: url('/img/background/menu_tab.gif') no-repeat bottom center; }
+
+/********************************************************/
+/*					 Tree of Life						*/
+#tree 
+{ 
+	z-index:1;
+	position:absolute; 
+	/*top:20px; 
+		left: 110px;  */
+	background:#c2ad8e url('/img/background/tree_life.jpg') top left no-repeat; 
+	width:100%;
+	height:100%;
+	opacity:0;
+}
+
+
+/********************************************************/
+/*						Main Div						*/
+
+#main			{ clear:both; height:100%;  }
+#main-left 		{ float:left; width:11%;  max-width:110px; height:100%; background:#444 url('/img/background/tibetan_left.png') right repeat-y; }
+#main-right 	{ float:right; width:11%; max-width:110px; height:100%; background:#444 url('/img/background/tibetan_right.png') left repeat-y; }
+#main-center 	{ width:auto; background-color:#444; margin:0 110px 0 110px; padding: 0px 0 10px 0; }
+
+/********************************************************/
+/*						Container Div					*/
+						
+#container-top-left 	{ width:45%; min-width:390px; min-height:16px; background:#444 url('/img/background/plant_top.jpg') top right no-repeat;}
+#container-top-right	{ width:100%;}
+
+#container			{ color: #EEE; padding:0; min-height:600px; font-size: 11px}
+#container-left 	{ width:45%;  height:588px; vertical-align:top;  background:#444 url('/img/background/plant_bottom.jpg') bottom right no-repeat;}
+#container-right 	{ vertical-align:top; min-height:588px; padding: 0px 5px 10px 0; }
+
+/********************************************************/
+/*						    Footer 						*/
+/********************************************************/
+
+
+#footer 		{color: #777; clear:both; font-size:smaller; padding:8px 0 4px 10px; margin:0; height:100%; vertical-align:bottom;}
+#footer-center 	{ margin-left:10px;  }
+#footer #contact{ float: right; position:relative; right:10px; }
+#footer #flags	{ float:right; position:relative; right:20px;}
+
+
+

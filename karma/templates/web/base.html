@@ -1,0 +1,75 @@
+{% load i18n %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>{% block title %}TITLE GOES HERE{% endblock %}</title>
+
+<link href="/css/common.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="/img/logos/favicon.ico" />
+
+<script src="/js/mootools.js" type="text/javascript"></script>
+<script src="/js/common.js" type="text/javascript"></script>
+
+{% block css %}{% endblock %}
+{% block js %}{% endblock %}
+
+</head>
+
+<body onload="{% block loaded  %}Common.loaded(){% endblock loaded  %}">
+<div id="tree"></div>
+<div id ="complete">
+	<div id="top">
+		<div id ="top-left" class="gradientTop">&nbsp;</div>
+		<div id ="top-right">&nbsp;</div>
+		<div id ="top-center">
+			<div id="items">
+				<ul>
+					<li><a href="/" class="{% block cHome %}{% endblock %}">{% trans "Acceuil" %}</a></li>
+					<li><a href="/biography" class="{% block cBio %}{% endblock %}">{% trans "Biographie" %}</a></li>
+					<li><a href="#" class="{% block cTherapy %}{% endblock %}">{% trans "Thérapie" %}</a></li>
+					<li><a href="#" class="{% block cCenter %}{% endblock %}">{% trans "Centre" %}</a></li>
+					<li><a href="#" class="{% block cTestimonies %}{% endblock %}">{% trans "Témoignages" %}</a></li>
+				</ul>
+			</div>
+			<span id="leaves">&nbsp;</span>
+			<span id="title"><h1>{% block section %}TITLE SECTION{% endblock %}</h1></span>
+
+		</div>
+    </div>
+
+	<div id="main">
+		<div id="main-left">&nbsp;</div>
+		<div id="main-right">&nbsp;</div>
+		<div id="main-center">
+			<div id="container">
+				<table border="0" cellspacing="0" cellpadding="0">
+					{# Top #}
+					<tr> <td id="container-top-left">&nbsp;</td><td id="container-top-right">&nbsp;</td></tr>
+					
+					{# Main Container #}
+					<tr>
+						<td id="container-left">{% block left %}{% endblock %}</td>
+						<td id="container-right">{% block right %}{% endblock %}</td>
+					</tr>
+					{# Footer #}
+					<tr>
+						<td id="footer" colspan="2">
+							<div id="contact"><a href="mailto:karma@">{% trans "Contact Us" %}</a></div>
+							<div id="flags">
+								<a href="/locale/fr"><img src="/img/flags/fr.png" alt="Français" /></a>
+								<a href="/locale/en"><img src="/img/flags/us.png" alt="English" /></a>
+								<a href="/locale/es"><img src="/img/flags/es.png" alt="Espanol" /></a>
+								<a href="/locale/ru"><img src="/img/flags/ru.png" alt="Russian" /></a>
+							</div>
+							<div>Copyright &copy; 2011 - L&Eacute;nergie du Yogi. All rights reserved</div>
+						</td>
+					</tr>	
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

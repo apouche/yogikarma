@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}L'&Eacute;nergie du Yogi{% endblock %}
+
+{% block section %}L'&Eacute;nergie du Yogi{% endblock %}
+
+{% block cHome %}active{% endblock cHome %}
+
+{% block left %}
+<ul>
+	<li><a href="/">{% trans "Acceuil" %}</a></li>
+	<li><a href="#">{% trans "Biographie" %}</a></li>
+	<li><a href="#">{% trans "Thérapie" %}</a></li>
+	<li><a href="#">{% trans "Séances" %}</a></li>
+	<li><a href="#">{% trans "Centre" %} {% trans "et" %} {% trans "Thérapie" %}</a></li>
+	<li><a href="#">{% trans "Témoignages" %}</a></li>
+</ul>
+{% endblock %}
+
+{% block right %}
+
+<h2>{% trans "Energie du Yogi" %}</h2>
+{% trans "par" %} <a href="">Yogi Karma Thutop Dorje</a>
+
+<p>
+	{% blocktrans  %}
+		Libération, Paix intérieure. <br />
+		Harmonisation des énergies
+	{% endblocktrans %}
+
+</p>
+
+<p><i>"{% blocktrans  %}L'apaisement réside en chacun de nous{% endblocktrans %}."</i> <a href="http://www.citation-du-jour.fr/citations-dalai-lama-218.html" target="_blank">Dalaï Lama</a></p>
+
+<div class="vspace"></div>
+<h2>{% trans "Thérapie" %}</h2>
+<p>{% blocktrans  %}Thérapie visant à enlever les blocages émotionels pour atteindre la fusion  énergétique harmonieuse Corps-Esprit{% endblocktrans %}</p>
+
+
+<div class="hr"></div>
+<p>
+	{% blocktrans  %}
+	Pratiquant la voie spirituelle du Bouddhisme tibétain et au cours de ses années de pratique, <a href="/biography">Yogi Karma</a> a développé sa methode thérapeutique de recentrage énergétique.
+	Trouvant l'origine du blocage émotionnel, Karma enlève les vibrations negatives et réactive le flot libérateur des énergies positives. 
+	{% endblocktrans %}
+</p>
+
+<div class="hr"></div>
+<p>
+	{% blocktrans  %}Notre existence n'est plus subit mais vecue. Nous reprenons possession de notre corps et de notre esprit.{% endblocktrans %}
+</p>
+
+<div class="vspace"></div>
+<h2>{% trans "Le" %} {% trans "Centre" %}</h2>
+
+<p>
+	{% blocktrans  %}
+	Situé dans la campagne varoise, dans le calme et la sérénite d'un ancien hameau du 17éme, 
+	le centre est à 8 km de la gare TGV Les Arcs/Draguignan.
+	{% endblocktrans %}
+</p>
+<div style="text-align:center"><img src="/img/photos/500/house_yogi.jpg" /></div>
+
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}L'&Eacute;nergie du Yogi - Yogi Karma Thutop Dorje{% endblock %}
+
+{% block section %}Yogi Karma Thutop Dorje{% endblock %}
+
+{% block cBio %}active{% endblock %}
+
+{% block left %}
+{# <ul> #}
+{# 	<li><a href="/">{% trans "Acceuil" %}</a></li> #}
+{# 	<li><a href="#">{% trans "Biographie" %}</a></li> #}
+{# 	<li><a href="#">{% trans "Thérapie" %}</a></li> #}
+{# 	<li><a href="#">{% trans "Séances" %}</a></li> #}
+{# 	<li><a href="#">{% trans "Centre" %} {% trans "et" %} {% trans "Thérapie" %}</a></li> #}
+{# 	<li><a href="#">{% trans "Témoignages" %}</a></li> #}
+{# </ul> #}
+
+<div style="text-align:center; margin-right:150px">
+	<img src="/img/photos/200/karma.png" />
+</div>
+{% endblock %}
+
+{% block right %}
+
+<div class="vspace"></div>
+<h2>{% trans "A propos de Yogi Karma Thutop Dorje" %}</h2>
+<p>
+	{% blocktrans  %}
+Karma est né le 16 dec 1961 à Cuneo (Italie) sous le nom de Michel Pierini. Il est de nationalité française, et marié à Nicole Chaniac. Il vit dans le département du Var dans le village de Taradeau.
+	{% endblocktrans %}
+</p>
+
+<div class="vspace"></div>
+<h2>{% trans "Le Boudhisme" %}</h2>
+<p>
+	{% blocktrans  %}
+	Sa rencontre avec le boudhisme tibetain date de 1999 d'où son nom tibétain qui lui a était donné par un de ses maitres et qui signifie "<i>pouvoir indestructible</i>".
+	Sa Lignée est celle du Karma Kagyu dont le maître spirituel suprême est Sa Sainteté Le 17 eme 
+	<a href="http://www.kagyuoffice.org/" target="_blank">Gyalwa Karmapa Ogyen Trinley Dorjé</a>. 
+	{% endblocktrans %}
+</p>
+
+<div class="hr"></div>
+<p>
+	{% blocktrans  %}
+	Karma a eu la transmition complète du Mahamudra sur 7 ans, pratique de la méditation, par son maitre Le 12éme Kenting Tai Situpa Rinpoche
+	{% endblocktrans %}
+</p>	
+
+<div class="hr"></div>
+<p>
+	{% blocktrans %}
+	Diplomé du Centre de Medecine tibétaine de Dharamsala (Inde, centre de SS Dalaï Lama) en Acupressure et massages.
+	En tant que  Yogi, Karma ne coupe pas ses cheveux, porte uniquement la robe de coton et pratique les Yogas Secrets de la lignée.
+	{% endblocktrans %}
+</p>
+
+<div class="vspace"></div>
+<h2>{% trans "Enseignant des Arts Martiaux" %}</h2>
+<p>
+	{% blocktrans %}
+	Karma pratique les arts martiaux depuis l'age de 13 ans dont il est expert de Karaté, style Shotokan (Japon), 6éme Dan, ceinture Rouge et blanche.
+	Il enseigne les arts martiaux depuis 30 ans et il est diplomé d'état sportif 1er degré.
+	{% endblocktrans %}
+</p>
+<div class="hr"></div>
+<p>
+	{% blocktrans %}
+ 	Son <a href="http://www.skcsa.com/" target="_blank">dojo actuel</a> est celui de Sophia Antipolis dans les Alpes Maritimes. Il a formé beaucoup de ceintures noires dont certain(e)s enseignent à leur tour le karat
+	{% endblocktrans %}
+</p>
+{% endblock %}
