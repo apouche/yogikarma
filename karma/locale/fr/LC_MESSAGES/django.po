@@ -19,8 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n>1;\n"
 
 #: templates/web/base.html:29 templates/web/index.html:12
-msgid "Acceuil"
-msgstr "Acceuil"
+msgid "Accueil"
+msgstr "Accueil"
 
 #: templates/web/base.html:30 templates/web/index.html:13
 msgid "Biographie"

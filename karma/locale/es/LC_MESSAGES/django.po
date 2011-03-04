@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: templates/web/base.html:29 templates/web/index.html:12
-msgid "Acceuil"
+msgid "Accueil"
 msgstr "???"
 
 #: templates/web/base.html:30 templates/web/index.html:13
