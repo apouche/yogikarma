@@ -90,8 +90,9 @@ table 	{ width:100%;}
 	text-align:center;
 	background-opacity:0;
 	position:relative;
-	top: 75px;
-	margin: 0 100px;
+	top: 95px;
+	margin: 0 350px;
+	padding:2px 5px;
 	font: 700 3em verdana, sans-serif;
 	border:solid 1px #8b7c65;
 }

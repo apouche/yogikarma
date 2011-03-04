@@ -5,12 +5,21 @@
 
 {% block section %}{% trans "Témoignages" %}{% endblock %}
 
-{% block tree %} {% trans "Témoignages" %} {% endblock %}
+{% block tree %}
+	{% trans "Témoignage" %} {% if testimony %} {% trans "de " %} {{name|capfirst}} {% endif %}
+
+{% endblock %}
 
 {% block cTestimonies %}active{% endblock %}
 
 {% block left %}
 
+<div>{% trans "Lisez les témoignages de" %}: </div>
+
+<ol>
+	<li><a href="/testimonies/david">David</a></li>
+	<li><a href="/testimonies/laurent">Laurent</a></li>
+</ol>
 {% endblock %}
 
 {% block right %}
