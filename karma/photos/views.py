@@ -24,7 +24,6 @@ def default(request, tag_=None):
 			photos[tag.name] = p
 		tag = None
 		
-	print photos
 	context = {'tags' : tags, 'photos' : photos, 'tag' : tag, 'notree' : True }
 	
 	return render_to_response('web/photos.html', context)
