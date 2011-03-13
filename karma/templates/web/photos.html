@@ -17,6 +17,7 @@
 
 {% block left %}
 
+<a href="/photos">{% trans "Photos" %}</a>
 <ul>
 {% for tag in tags %}
 	<li><a href="/photos/{{tag.name}}">{{tag.raw}}</a></li>
