@@ -61,8 +61,11 @@ var Common = new Hash(
 	
 	hideTreeLife: function()
 	{
-		var fx = new Fx.Tween($('tree'), {duration: 1300});
-		fx.start('opacity', '0');
+		if ($('tree'))
+		{
+			var fx = new Fx.Tween($('tree'), {duration: 1300});
+			fx.start('opacity', '0');
+		}
 	},
 	
 	loaded: function()

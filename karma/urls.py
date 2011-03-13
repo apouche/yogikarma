@@ -22,6 +22,10 @@ urlpatterns = patterns('',
 	(r'^center/?$', 'karma.healing.views.center'),
 	(r'^testimonies/?(?P<name>\w+)?/?$', 'karma.healing.views.testimonies'),
 	(r'^locale/(?P<language>\w+)/?$', 'karma.healing.views.locale'),
+	
+	#Photos
+	(r'^photos/?(?P<tag_>\w+)?/?$', 'karma.photos.views.default'),
+	(r'^photos/(?P<tag_>\w+)/(?P<pid_>\w+)?/?$', 'karma.photos.views.photo'),
 )
 
 if settings.DEBUG:

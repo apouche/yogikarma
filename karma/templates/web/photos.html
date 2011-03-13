@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{# HEAD EXTENSTIONS #}
+{% block title %}L'&Eacute;nergie du Yogi - {% trans "Photos" %}{% endblock %}
+{% block js %}<script src="/js/photos.js" type="text/javascript"></script>{% endblock %}
+
+{# LOADED EXTENSTIONS #}
+{% block loaded  %}Photos.loaded();{% endblock loaded  %}
+
+{# INITIAL EXTENSTIONS #}
+{% block section %}{% trans "Photos" %} {% if tag  %} - {{tag.raw}} {% endif %}{% endblock %}
+{% block tree %} {% trans "Photos" %} {% endblock %}
+{% block cCenter %}active{% endblock %}
+
+
+
+{% block left %}
+
+<ul>
+{% for tag in tags %}
+	<li><a href="/photos/{{tag.name}}">{{tag.raw}}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock %}
+
+{% block right %}
+
+{# TAG SPECIFIC #}
+{% if tag %}
+
+	<h2>{% trans "Photos" %} - {{tag.raw}}</h2>
+	<p>
+		{% for photo in photos  %}
+		<div class="thumbnail"><a href="/photos/{{tag.name}}/{{photo.flickr_id}}"><img class="thumbnail-img"src="{{photo.get_url_t}}" /></a>&nbsp;</div>
+		{% endfor %}
+	</p>
+
+	<div class="hr" style="clear:both"></div>
+	<p>
+		<div id="preview">
+			{% if photo %}
+				<img id="preview-img" src="{{photo.get_url}}" />
+			{% else %}
+				{% for photo in photos %}
+					{% if forloop.first %}
+						<img id="preview-img" src="{{photo.get_url}}" />
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+		</div>
+	</p>
+
+{# ALL PHOTOS #}
+{% else %}
+
+	{% for tag in tags %}
+		<h2>{% trans "Photos" %} - {{tag.raw}}</h2>
+		<p>
+			{% for key,value in photos.items %}
+				{% if key == tag.name %}
+					{% for photo in value %}
+					<div class="thumbnail"><a href="/photos/{{tag.name}}/{{photo.flickr_id}}"><img class="thumbnail-img"src="{{photo.get_url_t}}" /></a>&nbsp;</div>
+					{% endfor %}
+				{% endif %}
+			{% endfor %}
+		</p>
+		<div class="clear" style="padding-bottom: 16px"></div>
+	{% endfor %}
+	
+{% endif %}
+
+
+{% endblock %}
