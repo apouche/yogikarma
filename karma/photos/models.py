@@ -130,7 +130,7 @@ def sync_flickr(*args, **kwargs):
 						updated_date= datetime.fromtimestamp(float(photo.attrib['lastupdate'])),
 						#set			= photoset
 					)
-					print '[Flickr] - Adding New Photo: ' + p.title
+					print '[Flickr] - Adding New Photo: %s' % (p.title)
 					sync_photo(p)
 
 					u.updated = True
