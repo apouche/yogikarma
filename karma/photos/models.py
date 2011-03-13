@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.encoding import smart_str
 
 from flickrapi import FlickrAPI
 from datetime import datetime,timedelta
@@ -130,7 +131,7 @@ def sync_flickr(*args, **kwargs):
 						updated_date= datetime.fromtimestamp(float(photo.attrib['lastupdate'])),
 						#set			= photoset
 					)
-					print '[Flickr] - Adding New Photo: %s' % (p.title)
+					print '[Flickr] - Adding New Photo: %s' % (smart_str(p.title))
 					sync_photo(p)
 
 					u.updated = True
