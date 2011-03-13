@@ -116,7 +116,7 @@ def sync_flickr(*args, **kwargs):
 						p.server		= int(photo.attrib['server'])
 						p.secret		= photo.attrib['secret']
 
-						print '[Flickr] Updating Photo: ' + p.titl
+						print '[Flickr] Updating Photo: %s' % smart_str(photo.title)
 
 						sync_photo(p)
 				#otherwise create and save
@@ -174,7 +174,7 @@ def sync_set(photoset):
 	request 	= flickr.photosets_getPhotos(photoset_id=photoset.flickr_id,extras='last_update')
 	photos		= request.find('photoset').findall('photo')
 	
-	print "Syncing set: %s" % photoset.title
+	print "Syncing set: %s" %  (smart_str(photoset.title))
 	
 	updated = False
 	
@@ -211,7 +211,7 @@ def sync_photo(photo):
 	infos 		= flickr.photos_getInfo(photo_id=photo.flickr_id).find('photo')
 	exifs		= flickr.photos_getExif(photo_id=photo.flickr_id).find('photo').findall('exif')
 	
-	print "\tSyncing Photo: %s" % photo.title
+	print "\tSyncing Photo: %s" % smart_str(photo.title)
 	
 	for exif in exifs:
 		if exif.attrib['label'] == 'Aperture' and exif.attrib['tag'] == 'FNumber':
@@ -236,7 +236,7 @@ def sync_photo(photo):
 	try:
 		photo.save()
 	except:
-		print '\t\tFail to Save Photo: %s' % (photo.title)
+		print '\t\tFail to Save Photo: %s' %  smart_str(photo.title)
 		return photo
 	
 	for tag in tags:
