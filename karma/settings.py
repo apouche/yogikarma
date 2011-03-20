@@ -97,6 +97,9 @@ LANGUAGES = (
 	('es', 'Spanish'),
 	('ru', 'Russian'),
 )
+
+LANGUAGE_CODE = 'fr-FR'
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',

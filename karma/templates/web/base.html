@@ -21,7 +21,7 @@
 
 <body onload="Common.loaded();{% block loaded  %}{% endblock loaded  %}">
 	
-{% if not notree %}
+{% if tree %}
 	<div id="tree"><div id="tree-title">{% block tree %}TITLE SECTION{% endblock %}</div></div>
 {% endif %}
 
@@ -34,8 +34,10 @@
 				<ul>
 					<li><a href="/" class="{% block cHome %}{% endblock %}">{% trans "Accueil" %}</a></li>
 					<li><a href="/biography" class="{% block cBio %}{% endblock %}">{% trans "Biographie" %}</a></li>
-					<li><a href="/therapy" class="{% block cTherapy %}{% endblock %}">{% trans "Soins" %}</a></li>
+					{# <li><a href="/therapy" class="{% block cTherapy %}{% endblock %}">{% trans "Soins" %}</a></li> #}
 					<li><a href="/center" class="{% block cCenter %}{% endblock %}">{% trans "Centre" %}</a></li>
+					<li><a href="/seminars" class="{% block cSeminars %}{% endblock %}">{% trans "Séminaires" %}</a></li>
+					<li><a href="/photos" class="{% block cPhotos %}{% endblock %}">{% trans "Photos" %}</a></li>
 					<li><a href="/testimonies" class="{% block cTestimonies %}{% endblock %}">{% trans "Témoignages" %}</a></li>
 				</ul>
 			</div>
@@ -69,7 +71,7 @@
 								<a href="/locale/es"><img src="/img/flags/es.png" alt="Espanol" /></a>
 								<a href="/locale/ru"><img src="/img/flags/ru.png" alt="Russian" /></a>
 							</div>
-							<div>Copyright &copy; 2011 - L'&Eacute;nergie du Yogi. {% trans "Tous droits réservés" %}</div>
+							<div>Copyright &copy; 2011 - {% blocktrans %}L'Énergie du Yogi{% endblocktrans %}. {% trans "Tous droits réservés" %}</div>
 						</td>
 					</tr>	
 				</table>

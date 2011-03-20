@@ -8,42 +8,35 @@ def default(request):
 	## Start by adding a request object ##
 	add_request(request, inspect.currentframe())
 	
-	r = set_default_local(request)
-	if r is not None:
-		return r
+	set_default_local(request)
 	
-	return render_to_response('web/index.html', {})
+	#show tree in first window only
+	return render_to_response('web/index.html', {'tree' : True})
 	
 def biography(request):
-	
-	r = set_default_local(request)
-	if r is not None:
-		return r
 
 	return render_to_response('web/bio.html', {})
 	
 def therapy(request):
-	
-	r = set_default_local(request)
-	if r is not None:
-		return r
 
 	return render_to_response('web/therapy.html', {})
 
 def center(request):
-	
-	r = set_default_local(request)
-	if r is not None:
-		return r
 
 	return render_to_response('web/center.html', {})
+	
+def seminars(request):
+
+	return render_to_response('web/seminars.html', {})
+	
+def private(request):
+
+	return render_to_response('web/private.html', {})
 
 def testimonies(request, name):
 	
-	r = set_default_local(request)
-	if r is not None:
-		return r
-		
+	set_default_local(request)
+	
 	t = None
 	if name is not None:
 		t = "testimonies/%s/%s_%s.html" % (name, name, request.session["django_language"])
@@ -64,7 +57,4 @@ def set_default_local(request):
 	#French by default but potientally base this on the IP it's coming from
 	if 'django_language' not in request.session:
 		request.session["django_language"] = 'fr'
-		
-		#Redirect to previous caller page if no default language was set
-		return  HttpResponseRedirect(referer)
-	return None
+	

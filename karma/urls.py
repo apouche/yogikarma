@@ -20,8 +20,12 @@ urlpatterns = patterns('',
 	(r'^biography/?$', 'karma.healing.views.biography'),
 	(r'^therapy/?$', 'karma.healing.views.therapy'),
 	(r'^center/?$', 'karma.healing.views.center'),
+	(r'^seminars/?$', 'karma.healing.views.seminars'),
+	(r'^private/?$', 'karma.healing.views.private'),
+	
 	(r'^testimonies/?(?P<name>\w+)?/?$', 'karma.healing.views.testimonies'),
 	(r'^locale/(?P<language>\w+)/?$', 'karma.healing.views.locale'),
+	
 	
 	#Photos
 	(r'^photos/?(?P<tag_>\w+)?/?$', 'karma.photos.views.default'),

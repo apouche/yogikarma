@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% load i18n %}
 
-{% block title %}L'&Eacute;nergie du Yogi - {% trans "Soins" %}{% endblock %}
+{% block title %}{% blocktrans %}L'Énergie du Yogi{% endblocktrans %} - {% trans "Soins" %}{% endblock %}
 
 {% block section %} {% trans "Soins" %}{% endblock %}
 
 {% block tree %} {% trans "Soins" %}{% endblock %}
 
-{% block cTherapy %}active{% endblock %}
+{% block cSeminars %}active{% endblock %}
 
 {% block left %}
 <div><img src="/img/photos/200/soins2.png" /></div>
@@ -50,6 +50,18 @@
 	Harmoniser et équilibrer les énergies du corps fera renaître  une  perception positive de notre Être mental et physique.
 	{% endblocktrans %}
 </p>
+
+<h2>{% trans "Les Séances" %}</h2>
+
+<p>{% blocktrans %}Pour des soins, <a href="/biography">Yogi Karma</a> reçoit au centre 2 jours par semaine sur Rendez-vous, les Mardi et Mercredi (sauf Juillet-Aout){% endblocktrans %}</p>
+
+<ul>
+	<li>{% blocktrans %}Ouvert aux enfants, adolescents et adultes{% endblocktrans %}</li>
+	<li>{% blocktrans %}Entre 20 et 30 minutes <a href="/photos/soins">la séance</a>{% endblocktrans %}</li>
+	<li>{% blocktrans %}Tarif: 50 Euros, Enfants 30 Euros{% endblocktrans %}</li>
+</ul>
+
+<p>{% blocktrans %}Yogi Karma effectue aussi les rendez-vous à domicile.{% endblocktrans %}</p>
 
 <div><img src="/img/photos/500/therapy1.png" /></div>
 

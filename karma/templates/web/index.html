@@ -1,22 +1,23 @@
 {% extends "base.html" %}
 {% load i18n %}
 
-{% block title %}L'&Eacute;nergie du Yogi{% endblock %}
+{% block title %}{% blocktrans %}L'Énergie du Yogi{% endblocktrans %}{% endblock %}
 
-{% block section %}L'&Eacute;nergie du Yogi{% endblock %}
+{% block section %}{% blocktrans %}L'Énergie du Yogi{% endblocktrans %}{% endblock %}
 
-{% block tree %}L'Énergie du Yogi{% endblock %}
+{% block tree %}{% blocktrans %}L'Énergie du Yogi{% endblocktrans %}{% endblock %}
 
 {% block cHome %}active{% endblock cHome %}
 
 {% block left %}
 <ul>
 	<li><a href="/">{% trans "Accueil" %}</a></li>
-	<li><a href="#">{% trans "Biographie" %}</a></li>
-	<li><a href="#">{% trans "Soins" %}</a></li>
-	<li><a href="#">{% trans "Séances" %}</a></li>
-	<li><a href="#">{% trans "Centre" %} {% trans "et" %} {% trans "Soins" %}</a></li>
-	<li><a href="#">{% trans "Témoignages" %}</a></li>
+	<li><a href="/biography">{% trans "Biographie" %}</a></li>
+	<li><a href="/therapy">{% trans "Soins" %}  {% trans "et" %} {% trans "Séances à Domicile" %}</a></li>
+	<li><a href="/center">{% trans "Centre" %} {% trans "et" %} {% trans "Soins" %}</a></li>
+	<li><a href="/seminars">{% trans "Séminaires" %}</a></li>
+	<li><a href="/photos">{% trans "Photos" %}</a></li>
+	<li><a href="/testimonies">{% trans "Témoignages" %}</a></li>
 </ul>
 {% endblock %}
 

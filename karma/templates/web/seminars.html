@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% blocktrans %}L'Énergie du Yogi{% endblocktrans %} - {% trans "Séminaires" %}{% endblock %}
+
+{% block section %}{% trans "Séminaires" %}{% endblock %}
+
+{% block tree %}{% trans "Séminaires" %}{% endblock %}
+
+{% block cSeminars %}active{% endblock %}
+
+{% block left %}
+<div>
+	<img style="width:200px" src="http://farm6.static.flickr.com/5258/5519416273_b65989146d.jpg" />
+</div>
+{% endblock %}
+
+{% block right %}
+
+<h2>{% trans "La Méditation" %}</h2>
+
+<p>{% blocktrans %}La méditation est la concentration sur un point bien défini.{% endblocktrans %} </p> 
+{% trans "Dans quel but" %} ? 
+<ul>
+ <li>{% blocktrans %}Stabiliser l'esprit et diminuer les afflux de pensées.{% endblocktrans %}</li>
+ <li>{% blocktrans %}Atteindre le calme mental, apaisement, sérénité (méditation Chinay dans le bouddhisme tibétain).{% endblocktrans %}</li>
+</ul>
+ 
+ 
+<h2>{% trans "Accès" %}</h2>
+<p><a href="/photos/lecentre/">Dans une maison en Pierres</a>, niché dans la campagne varoise, <a href="/center">le centre</a> vous accueille sur le principe d'une maison d'hotes.</p>
+
+<p>Promenades pédestre - piscine - Calme et Sérénité. Les environs sont attractifs et accueillants.
+</p>
+
+<div class="hr"></div>
+<p>{% trans "Accès" %} : 
+	<ul>
+		<li>{% blocktrans %}Par le train Gare des Arcs/Draguignan ( 8km){% endblocktrans %}</li>
+        <li>{% blocktrans %}Autoroute A8 : Sortie Le Muy ou Le Cannet des Maures (nous sommes à 15 minutes de l'accés de L'autoroute) GPS: quartier La Lombarde{% endblocktrans %}</li>
+        <li>{% blocktrans %}Aéroport  Nice Côte d'Azur  (45 minutes par Autoroute ){% endblocktrans %}</li>
+	</ul>
+<p>{% blocktrans %}Le transport de la gare au centre est offert.{% endblocktrans %}</p>
+
+<h2>{% trans "Séminaires" %}</h2>
+
+<p>{% blocktrans %}Week-end de 3 jours du Vendredi au Dimanche{% endblocktrans %} :</p>
+
+<p>
+	{% blocktrans %}
+	Méditation: Retrouver la connection avec la Nature et nos Sens. Méditation sur les 5 élements (Terre. Air. Eau. Feu. Espace) et les 5 sens (Son. Vue. Odorat. Toucher. Goût)
+	{% endblocktrans %}
+</p>
+
+<div class="hr"></div>
+<p>
+	{% blocktrans %}
+	Thèmes des séminaires:
+	{% endblocktrans %}
+</p>
+<ul>
+<li>{% blocktrans %}Relaxation{% endblocktrans %}</li>
+<li>{% blocktrans %}Soins (Healing) {% endblocktrans %}</li>
+<li>{% blocktrans %}Massage énergétique{% endblocktrans %}</li>
+<li>{% blocktrans %}Equilibrage des énergies{% endblocktrans %}</li>
+<li>{% blocktrans %}Yoga tibétain des énergies ( Yoga sur les 5 éléments){% endblocktrans %}</li>
+<li>{% blocktrans %}La pensée positive.{% endblocktrans %}</li>
+</ul>
+
+<div class="hr"></div>
+<p>{% blocktrans %}Le week end de 3 jours, pension complète (repas sans viande et sans poissons){% endblocktrans %}</p>
+<ul>
+	<li>{% blocktrans %}Hébérgement et le programme: 450€.{% endblocktrans %}</li>
+  	<li>{% blocktrans %}200€ d'arrhes à la réservation.{% endblocktrans %}</li>
+  	<li>{% blocktrans %}Minimum: 2 personnes - Maximum: 8 personnes.{% endblocktrans %}</li>
+</ul>
+
+<div class="hr"></div>
+<p>
+	{% blocktrans %}
+	Séminaires à la semaine du samedi au Samedi  pendant les mois de Juillet et Août.
+	Prochains séminaires disponibles à la semaine en 2012.
+	{% endblocktrans %}
+</p>
+<ul>
+    <li>{% blocktrans %}950 euros. Arrhes de réservation 400 euros.{% endblocktrans %}</li>
+    <li>{% blocktrans %}Minimum 3 pers. Maximum 8 pers.{% endblocktrans %}</li>
+</ul>
+<div class="hr"></div>
+<p>Le centre se resérve le droit d'annuler le séminaire si le nombre minimum de participants n'est pas atteint et remboursera la totalité des arrhes.</p>
+
+
+
+
+<h2>{% trans "Dates" %}</h2>
+
+{% endblock %}
