@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% blocktrans %}L'Énergie du Yogi{% endblocktrans %} - {% trans "Séances à Domicile" %}{% endblock %}
+
+{% block section %}{% trans "Séances à Domicile" %}{% endblock %}
+
+{% block tree %}{% trans "Séances à Domicile" %}{% endblock %}
+
+{% block cSeminars %}active{% endblock %}
+
+{% block left %}
+<div>
+	<img src="http://farm6.static.flickr.com/5018/5522698999_110da86f84_m.jpg" />
+</div>
+{% endblock %}
+
+{% block right %}
+
+<h2>{% trans "Les Séances" %}</h2>
+
+<p>Pour des soins, <a href="/biography">Yogi Karma</a> reçoit au centre 2 jours par semaine sur Rendez-vous, les Mardi et Mercredi (sauf Juillet-Aout)</p>
+
+<ul>
+	<li>{% blocktrans %}Ouvert aux enfants, adolescents et adultes{% endblocktrans %}</li>
+	<li>{% blocktrans %}Entre 20 et 30 minutes <a href="/therapy">la séance</a>{% endblocktrans %}</li>
+	<li>{% blocktrans %}Tarif: 50 Euros, Enfants 30 Euros{% endblocktrans %}</li>
+</ul>
+
+<p>{% blocktrans %}Yogi Karma effectue aussi les rendez-vous à domicile.{% endblocktrans %}</p>
+
+
+{% endblock %}
