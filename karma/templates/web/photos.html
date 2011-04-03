@@ -35,7 +35,7 @@
 	<h2>{% trans "Photos" %} - {{tag.raw}}</h2>
 	<p>
 		{% for photo in photos  %}
-		<div class="thumbnail"><a href="/photos/{{tag.name}}/{{photo.flickr_id}}"><img class="thumbnail-img"src="{{photo.get_url_t}}" /></a>&nbsp;</div>
+		<div class="thumbnail"><a href="/photos/{{tag.name}}/{{photo.flickr_id}}"><img class="thumbnail-img"src="{{photo.get_url_t}}" alt="{{photo.title}}" /></a>&nbsp;</div>
 		{% endfor %}
 	</p>
 
@@ -43,11 +43,13 @@
 	<p>
 		<div id="preview">
 			{% if photo %}
-				<img id="preview-img" src="{{photo.get_url}}" />
+				<h2>{{photo.title}}</h2>
+				<p><img id="preview-img" src="{{photo.get_url}}" alt="{{photo.title}}" /></p>
 			{% else %}
 				{% for photo in photos %}
 					{% if forloop.first %}
-						<img id="preview-img" src="{{photo.get_url}}" />
+						<h2>{{photo.title}}</h2>
+						<p><img id="preview-img" src="{{photo.get_url}}" alt="{{photo.title}}" /></p>
 					{% endif %}
 				{% endfor %}
 			{% endif %}
@@ -63,7 +65,7 @@
 			{% for key,value in photos.items %}
 				{% if key == tag.name %}
 					{% for photo in value %}
-					<div class="thumbnail"><a href="/photos/{{tag.name}}/{{photo.flickr_id}}"><img class="thumbnail-img"src="{{photo.get_url_t}}" /></a>&nbsp;</div>
+					<div class="thumbnail"><a href="/photos/{{tag.name}}/{{photo.flickr_id}}"><img class="thumbnail-img"src="{{photo.get_url_t}}" alt="{{photo.title}}" /></a>&nbsp;</div>
 					{% endfor %}
 				{% endif %}
 			{% endfor %}

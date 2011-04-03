@@ -18,6 +18,7 @@ urlpatterns = patterns('',
 
 	(r'^/?$', 'karma.healing.views.default'),
 	(r'^biography/?$', 'karma.healing.views.biography'),
+	(r'^yogikarma/?$', 'karma.healing.views.biography'),
 	(r'^therapy/?$', 'karma.healing.views.therapy'),
 	(r'^center/?$', 'karma.healing.views.center'),
 	(r'^seminars/?$', 'karma.healing.views.seminars'),
