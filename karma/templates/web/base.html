@@ -58,7 +58,14 @@
 					
 					{# Main Container #}
 					<tr>
-						<td id="container-left">{% block left %}{% endblock %}</td>
+						<td id="container-left">
+							{# Common mailto #}
+							<ul><li><a href="mailto:karma@energieduyogi.fr">{% trans "Nous Contacter" %}</a></li></ul>
+							<div class="hr" style="margin-right:152px; margin-bottom:5px"></div>
+							
+							{# Block left #}
+							{% block left %}{% endblock %}
+						</td>
 						<td id="container-right">{% block right %}{% endblock %}</td>
 					</tr>
 					{# Footer #}

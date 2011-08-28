@@ -45,7 +45,7 @@ def testimonies(request, name):
 	return render_to_response('web/testimonies.html', {'testimony': t, 'name' : name })
 	
 def locale(request, language):
-	referer = get_referer_view(request, 'default')
+	referer = get_referer_view(request, '/')
 	
 	request.session["django_language"] = language
 	

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-26 18:37+0100\n"
+"POT-Creation-Date: 2011-08-28 17:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,98 +17,414 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: templates/web/base.html:29 templates/web/index.html:12
-msgid "Accueil"
-msgstr "Home"
-
-#: templates/web/base.html:30 templates/web/index.html:13
-msgid "Biographie"
-msgstr "Biography"
-
-#: templates/web/base.html:31 templates/web/index.html:14
-#: templates/web/index.html.py:16 templates/web/index.html:37
-msgid "Thérapie"
-msgstr "Theraphy"
-
-#: templates/web/base.html:32 templates/web/index.html:16
-#: templates/web/index.html.py:55
-msgid "Centre"
-msgstr "Center"
-
-#: templates/web/base.html:33 templates/web/index.html:17
-msgid "Témoignages"
-msgstr "Testimonies"
-
-#: templates/web/base.html:59
-msgid "Contact Us"
-msgstr ""
-
-#: templates/web/bio.html:28
-msgid "A propos de Yogi Karma Thutop Dorje"
-msgstr "About Yogi Karma Thutop Dorje"
-
-#: templates/web/bio.html:34
-msgid "Le Boudhisme"
-msgstr ""
-
-#: templates/web/bio.html:52
-msgid "Enseignant des Arts Martiaux"
-msgstr "Martial Arts Teacher"
-
-#: templates/web/index.html:15
-msgid "Séances"
-msgstr ""
-
-#: templates/web/index.html:16
-msgid "et"
-msgstr ""
-
-#: templates/web/index.html:23
-msgid "Energie du Yogi"
-msgstr ""
-
-#: templates/web/index.html:24
+#: templates/testimonies/carole/carole_en.html:3
+#: templates/testimonies/carole/carole_fr.html:3
+#: templates/testimonies/david/david_fr.html:3
+#: templates/testimonies/evelyne/evelyne_en.html:3
+#: templates/testimonies/evelyne/evelyne_fr.html:3
+#: templates/testimonies/laurent/laurent_en.html:3
+#: templates/testimonies/laurent/laurent_fr.html:3
+#: templates/testimonies/oceane/oceane_en.html:3
+#: templates/testimonies/oceane/oceane_fr.html:3
+#: templates/testimonies/romain/romain_en.html:3
+#: templates/testimonies/romain/romain_fr.html:3
+#: templates/testimonies/thierry/thierry_en.html:3
+#: templates/testimonies/thierry/thierry_fr.html:3 templates/web/index.html:27
 msgid "par"
 msgstr "by"
 
-#: templates/web/index.html:27
+#: templates/testimonies/oceane/oceane_en.html:2
+#: templates/testimonies/oceane/oceane_fr.html:2
+msgid "Sérénité"
+msgstr "Calmness"
+
+#: templates/testimonies/romain/romain_en.html:2
+#: templates/testimonies/romain/romain_fr.html:2
+msgid "Guérison"
+msgstr "Healing"
+
+#: templates/testimonies/thierry/thierry_en.html:2
+#: templates/testimonies/thierry/thierry_fr.html:2
+msgid "Rencontre avec Karma"
+msgstr "First encounter with Karma"
+
+#: templates/web/base.html:35 templates/web/index.html:14
+msgid "Accueil"
+msgstr "Home"
+
+#: templates/web/base.html:36 templates/web/bio.html:8
+#: templates/web/index.html:15
+msgid "Biographie"
+msgstr "Biography"
+
+#: templates/web/base.html:38 templates/web/center.html:4
+#: templates/web/center.html.py:6 templates/web/center.html:8
+#: templates/web/index.html:17 templates/web/index.html.py:55
+msgid "Centre"
+msgstr "Center"
+
+#: templates/web/base.html:39 templates/web/center.html:6
+#: templates/web/center.html.py:8 templates/web/index.html:18
+#: templates/web/seminars.html:4 templates/web/seminars.html.py:6
+#: templates/web/seminars.html:8 templates/web/seminars.html.py:45
+msgid "Séminaires"
+msgstr "Seminars"
+
+#: templates/web/base.html:40 templates/web/index.html:19
+#: templates/web/photos.html:5 templates/web/photos.html.py:12
+#: templates/web/photos.html:13 templates/web/photos.html.py:21
+#: templates/web/photos.html:35 templates/web/photos.html.py:63
+msgid "Photos"
+msgstr "Photos"
+
+#: templates/web/base.html:41 templates/web/index.html:20
+#: templates/web/testimonies.html:4 templates/web/testimonies.html.py:6
+#: templates/web/testimonies.html:36
+msgid "Témoignages"
+msgstr "Testimonies"
+
+#: templates/web/base.html:63 templates/web/base.html.py:74
+msgid "Nous Contacter"
+msgstr "Contact Us"
+
+#: templates/web/base.html:81 templates/web/bio.html:4
+#: templates/web/center.html:4 templates/web/index.html:4
+#: templates/web/index.html.py:6 templates/web/index.html:8
+#: templates/web/photos.html:5 templates/web/private.html:4
+#: templates/web/seminars.html:4 templates/web/testimonies.html:4
+#: templates/web/therapy.html:4
+msgid "L'Énergie du Yogi"
+msgstr "The Yogi's Energy"
+
+#: templates/web/base.html:81
+msgid "Tous droits réservés"
+msgstr "All rights reserved"
+
+#: templates/web/bio.html:29
+msgid "A propos de Yogi Karma Thutop Dorje"
+msgstr "About Yogi Karma Thutop Dorje"
+
+#: templates/web/bio.html:31
+msgid ""
+"\n"
+"Yogi Karma est de nationalité française et vit dans le département du Var, "
+"dans le village de Taradeau avec son épouse Nicole.\n"
+"\t"
+msgstr ""
+"Yogi Karma is French and lives in the department of the Var, more "
+"specifically in the village of Taradeau with his wife Nicole."
+
+#: templates/web/bio.html:36
+msgid "Le Boudhisme"
+msgstr "Buddhism"
+
+#: templates/web/bio.html:38
+msgid ""
+"\n"
+"\tSa rencontre avec le boudhisme tibetain date de 1999 d'où son nom tibétain "
+"qui lui a était donné par un de ses maitres et qui signifie \"<i>pouvoir "
+"indestructible</i>\".\n"
+"\tSa Lignée est celle du Karma Kagyu dont le maître spirituel suprême est Sa "
+"Sainteté Le 17 eme \n"
+"\t<a href=\"http://www.kagyuoffice.org/\" target=\"_blank\">Gyalwa Karmapa "
+"Ogyen Trinley Dorjé</a>. \n"
+"\t"
+msgstr ""
+"His encounter  with Tibetan Buddhism dates back to 1999 where his Tibetan "
+"name was given to him by one of his Teachers and which means \" "
+"<i>indestructible power</i>\". His Lineage is the one of  Karma Kagyu who's "
+"supreme spiritual master(teacher) is His Holiness  the 17th  <a href="
+"\"http://www.kagyuoffice.org/\" target=\"_blank\">Gyalwa Karmapa Ogyen "
+"Trinley Dorjé</a>."
+
+#: templates/web/bio.html:47
+msgid ""
+"\n"
+"\tKarma a reçu la transmition complète du Mahamudra sur 7 ans, pratique de "
+"la méditation, par son maitre Le 12éme Kenting Tai Situpa Rinpoche\n"
+"\t"
+msgstr ""
+"Karma had the complete transmition of Mahamudra over 7 years,  meditation "
+"practice, by his master The 12th Kenting Tai Situpa Rinpoche."
+
+#: templates/web/bio.html:54
+msgid ""
+"\n"
+"\tDiplomé du Centre de Medecine tibétaine de Dharamsala (Inde, centre de SS "
+"Dalaï Lama) en Acupressure et massages tibétains.\n"
+"\tEn tant que  Yogi, Karma ne coupe pas ses cheveux, porte uniquement la "
+"robe de coton et pratique les Yogas Secrets de la lignée.\n"
+"\t"
+msgstr ""
+"Karma graduated from the Center of Tibetan Medecine of Dharamsala (India, "
+"center of SS Dalai Lama) in Acupressure and Tibetan massages. As Yogi, Karma "
+"does not cut his hair, wears only the cotton dress and practises the Secret "
+"Yogas of the lineage."
+
+#: templates/web/bio.html:60
+msgid "Projets Caritatifs"
+msgstr "Charitable Projects"
+
+#: templates/web/bio.html:63
+msgid ""
+"\n"
+"\t\tKarma a réalisé un projet caritatif en Inde au profit du <a href="
+"\"http://www.himachalweb.com/tashijong/index.htm\" target=\"_blank"
+"\">monastère de Tashi Jong</a>,\n"
+"\t\tla dernière demeure du yogi Atrum.\n"
+"\t"
+msgstr ""
+"Karma brought to terms a charitable project in India for the benefit of the "
+"<a href=\"http://www.himachalweb.com/tashijong/index.htm\" target=\"_blank"
+"\">monastery of Tashi Jong</a>, the resting place(last home) of the Yogi "
+"Atrum."
+
+#: templates/web/bio.html:70
+msgid ""
+"\n"
+"\tLe projet se portait sur la réalisation du temple qui abrite la sépulture "
+"de ce grand maître tibétain. Le montant s'élevait à 5000 euros. Yogi Karma "
+"remercie les généreux donateurs spontanés qui ont permit de finaliser ce "
+"projet.\n"
+"\t"
+msgstr ""
+"The project was to bring to terms the realisation of the temple which "
+"shelters the grave of this Tibetan Grand Master. The amount came to 5000 "
+"euro. Yogi Karma thanks the generous and spontaneous donors who have allowed "
+"him to finalise this project."
+
+#: templates/web/bio.html:76
+msgid ""
+"\n"
+"\t\n"
+"\t"
+msgstr ""
+
+#: templates/web/bio.html:83
+msgid ""
+"\n"
+"\tKarma mettra prochainement une boutique en ligne afin de promouvoir l'art "
+"tibétain, la totalité des bénéfices serviront à sponsoriser 2 futurs "
+"projets:\n"
+"\t"
+msgstr ""
+"Karma will soon create an online shop to promote the Tibetan art. The "
+"totality of the profits will serve to sponsor future 2 projects:"
+
+#: templates/web/bio.html:88
+msgid ""
+"la reconstruction du monastère de Nub Gon au Tibet pour un appel de fonds de "
+"45000 Euros"
+msgstr ""
+"The reconstruction of the monastery of Nub Gon in Tibet for a 45000 euros "
+"fund raising."
+
+#: templates/web/bio.html:89
+msgid ""
+"un projet concernant l’achat d un terrain en Inde du Sud qui servira de "
+"refuge pour les animaux"
+msgstr ""
+"A project concerning the purchase of a parcel of land in South India which "
+"will serve as a refuge for animals."
+
+#: templates/web/bio.html:90
+msgid "plus amples détails seront donnés ultérieurement"
+msgstr "More ample details will be later given"
+
+#: templates/web/bio.html:95
+msgid "Enseignant des Arts Martiaux"
+msgstr "Martial Arts Teacher"
+
+#: templates/web/bio.html:97
+msgid ""
+"\n"
+"\tKarma pratique les arts martiaux depuis l'age de 13 ans dont il est expert "
+"de Karaté, style Shotokan (Japon), 6éme Dan, ceinture Rouge et blanche.\n"
+"\tIl enseigne les arts martiaux depuis 30 ans et il est diplomé d'état "
+"sportif 1er degré.\n"
+"\t"
+msgstr ""
+"Karma has practiced martial arts since the age of 13 of which makes him an "
+"expert of karate,  Shotokan style ( Japan ) of which he is 6th Dan, red and "
+"white belt. He has been teaching  martial arts for 30 years and he is "
+"certified in 1st degree of sports state."
+
+#: templates/web/bio.html:104
+msgid ""
+"\n"
+" \tSon <a href=\"http://www.skcsa.com/\" target=\"_blank\">dojo actuel</a> "
+"est celui de Sophia Antipolis dans les Alpes Maritimes. Il a formé beaucoup "
+"de ceintures noires dont certain(e)s enseignent à leur tour le karaté.\n"
+"\t"
+msgstr ""
+"His <a href=\"http://www.skcsa.com/\" target=\"_blank\">current dojo</a> is "
+"the one of Sophia Antipolis in the Alpes-Maritimes. He has trained many "
+"black belts who in turn now teach karate."
+
+#: templates/web/center.html:4 templates/web/center.html.py:6
+#: templates/web/center.html:8 templates/web/index.html:16
+#: templates/web/index.html.py:17
+msgid "et"
+msgstr "and"
+
+#: templates/web/center.html:4 templates/web/index.html:16
+#: templates/web/index.html.py:17 templates/web/index.html:38
+#: templates/web/therapy.html:4 templates/web/therapy.html.py:6
+#: templates/web/therapy.html:8 templates/web/therapy.html.py:18
+msgid "Soins"
+msgstr "Healing"
+
+#: templates/web/center.html:20
+#, fuzzy
+msgid "Le Centre"
+msgstr "The Center"
+
+#: templates/web/center.html:22
+msgid ""
+"\n"
+"\tSitué dans la campagne varoise, dans le calme et la sérénite d'un ancien "
+"hameau du 17éme, le centre est à 8 km de la gare TGV Les Arcs/Draguignan.\n"
+"\t"
+msgstr ""
+"Located in the Var countryside, within the calm and tranquility of a 17th "
+"century hamlet. The centre is 8km away from the TGV station situated in Les "
+"Arcs/Draguignan."
+
+#: templates/web/center.html:27
+msgid "Pour vous accueillir"
+msgstr "To welcome you"
+
+#: templates/web/center.html:29
+msgid "5 chambres doubles confortables et air conditionné."
+msgstr "5 double bedrooms, very comfortable."
+
+#: templates/web/center.html:30
+msgid "Pension complète."
+msgstr "Everything included"
+
+#: templates/web/center.html:31
+msgid "Repas végétariens."
+msgstr "Vegetarian meals"
+
+#: templates/web/center.html:36
+msgid "Le centre fonctionne sur le principe de la maison d'hôte."
+msgstr " "
+
+#: templates/web/center.html:40
+msgid ""
+"Et, quand les beaux jours sont là, vous pourrez profiter de la piscine, à "
+"l'ombre de chênes centenaires."
+msgstr ""
+"And, when the beautiful days are there, the swimming pool is at your "
+"disposal."
+
+#: templates/web/center.html:45
+msgid ""
+"N'hésitez pas à retrouver <a href=\"/photos\"> notre section photos</a>."
+msgstr ""
+"Please feel free to scroll down our <a href=\"/photos\">Picture Section</a> "
+"for more information."
+
+#: templates/web/center.html:48
+msgid "Séances"
+msgstr "Sessions"
+
+#: templates/web/center.html:50
+msgid ""
+"La séance de soins (healing) dure de 30 à 45 minutes. Elle se deroule en 5 "
+"etapes"
+msgstr ""
+"The Therapy session last between 30mn and 45mn. It unravels in 5 steps:"
+
+#: templates/web/center.html:55
+msgid "Détecter l'origine du blocage émotionnel"
+msgstr "The origin of the emotional blockage."
+
+#: templates/web/center.html:56
+msgid "Recentrage énergétique des chakras avec cristaux"
+msgstr "Energetic centring with crystals."
+
+#: templates/web/center.html:57
+msgid "Suppression des énérgies émotionelles négatives"
+msgstr "Removal of the negative emotional vibrations."
+
+#: templates/web/center.html:58
+#, fuzzy
+msgid "Équilibrage des énergies par la vibration du son"
+msgstr " Energetic rebalancing through vibratory sounds"
+
+#: templates/web/center.html:59
+msgid "Harmonisation du flot des énergies positives"
+msgstr "Harmonisation of the positive stream of energies."
+
+#: templates/web/center.html:64
+msgid ""
+"Un <a href=\"/testimonies\">forum de témoignage</a> présente differentes "
+"personnes avant et aprés l'intervention de Yogi Karma Thutop Dorjé."
+msgstr ""
+"A <a href=\"/testimonies\">forum for testimonies</a> presents different "
+"people's experiences before and after yogi's intervention."
+
+#: templates/web/index.html:16 templates/web/private.html:4
+#: templates/web/private.html.py:6 templates/web/private.html:8
+msgid "Séances à Domicile"
+msgstr "Home visits"
+
+#: templates/web/index.html:26
+msgid "Energie du Yogi"
+msgstr "The Yogi's Energy"
+
+#: templates/web/index.html:30
 msgid ""
 "\n"
 "\t\tLibération, Paix intérieure. <br />\n"
 "\t\tHarmonisation des énergies\n"
 "\t"
 msgstr ""
+"\n"
+"\t\tLiberation, Peace of mind <br />\n"
+"\t\tHarmonization of the energies\n"
+"\t"
 
-#: templates/web/index.html:34
+#: templates/web/index.html:36
 msgid "L'apaisement réside en chacun de nous"
 msgstr ""
 
-#: templates/web/index.html:38
+#: templates/web/index.html:39
 msgid ""
-"Thérapie visant à enlever les blocages émotionels pour atteindre la fusion  "
+"Soins visant à enlever les blocages émotionnels pour atteindre la fusion  "
 "énergétique harmonieuse Corps-Esprit"
 msgstr ""
+"Healing to remove the emotional disturbances to reach the harmonious energy "
+"fusion of Body and Mind"
 
-#: templates/web/index.html:43
+#: templates/web/index.html:44
 msgid ""
 "\n"
 "\tPratiquant la voie spirituelle du Bouddhisme tibétain et au cours de ses "
 "années de pratique, <a href=\"/yogikarma\">Yogi Karma</a> a développé sa "
 "methode thérapeutique de recentrage énergétique.\n"
 "\tTrouvant l'origine du blocage émotionnel, Karma enlève les vibrations "
-"negatives et réactive le flot libérateur des énergies positives. \n"
+"négatives et réactive le flot libérateur des énergies positives. \n"
 "\t"
 msgstr ""
+"Through the Practice of the spiritual way of the Tibetan Buddhism and during "
+"his years of practice, <a href=\"/yogikarma\">Yogi Karma</a> developed his "
+"own therapeutic method of energy centring. Finding the origin of the "
+"emotional disturbance, Karma removes the negative vibrations and revives the "
+"liberating stream of positive energies."
 
-#: templates/web/index.html:51
+#: templates/web/index.html:52
 msgid ""
 "Notre existence n'est plus subit mais vecue. Nous reprenons possession de "
 "notre corps et de notre esprit."
 msgstr ""
+"Our existence is no longer inflicted upon us but lived. We repossess our "
+"body and our spirit."
 
 #: templates/web/index.html:55
 msgid "Le"
-msgstr ""
+msgstr "The"
 
 #: templates/web/index.html:58
 msgid ""
@@ -118,3 +434,251 @@ msgid ""
 "\tle centre est à 8 km de la gare TGV Les Arcs/Draguignan.\n"
 "\t"
 msgstr ""
+"Located in the Var countryside, within the calm and serenity of a 17th "
+"century Hamlet. The centre is 8km away from the TGV station situated in Les "
+"Arcs/Draguignan."
+
+#: templates/web/index.html:65
+msgid ""
+"Placé sous la spiritualité et la philosophie bouddhiste tibétaine, le centre "
+"est ouvert à tous."
+msgstr ""
+
+#: templates/web/private.html:20 templates/web/therapy.html:54
+msgid "Les Séances"
+msgstr ""
+
+#: templates/web/private.html:25 templates/web/therapy.html:59
+msgid "Ouvert aux enfants, adolescents et adultes"
+msgstr ""
+
+#: templates/web/private.html:26
+msgid "Entre 20 et 30 minutes <a href=\"/therapy\">la séance</a>"
+msgstr ""
+
+#: templates/web/private.html:27 templates/web/therapy.html:61
+msgid "Tarif: 50 Euros, Enfants 30 Euros"
+msgstr ""
+
+#: templates/web/private.html:30 templates/web/therapy.html:64
+msgid "Yogi Karma effectue aussi les rendez-vous à domicile."
+msgstr ""
+
+#: templates/web/seminars.html:20
+msgid "La Méditation"
+msgstr ""
+
+#: templates/web/seminars.html:22
+msgid "La méditation est la concentration sur un point bien défini."
+msgstr ""
+
+#: templates/web/seminars.html:23
+msgid "Dans quel but"
+msgstr ""
+
+#: templates/web/seminars.html:25
+msgid "Stabiliser l'esprit et diminuer les afflux de pensées."
+msgstr ""
+
+#: templates/web/seminars.html:26
+msgid ""
+"Atteindre le calme mental, apaisement, sérénité (méditation Chinay dans le "
+"bouddhisme tibétain)."
+msgstr ""
+
+#: templates/web/seminars.html:30 templates/web/seminars.html.py:37
+msgid "Accès"
+msgstr ""
+
+#: templates/web/seminars.html:39
+msgid "Par le train Gare des Arcs/Draguignan ( 8km)"
+msgstr ""
+
+#: templates/web/seminars.html:40
+msgid ""
+"Autoroute A8 : Sortie Le Muy ou Le Cannet des Maures (nous sommes à 15 "
+"minutes de l'accés de L'autoroute) GPS: quartier La Lombarde"
+msgstr ""
+
+#: templates/web/seminars.html:41
+msgid "Aéroport  Nice Côte d'Azur  (45 minutes par Autoroute )"
+msgstr "Nice Airport - NCE - 45m drive"
+
+#: templates/web/seminars.html:43
+msgid "Le transport de la gare au centre est offert."
+msgstr "Transportation to the train station is offered"
+
+#: templates/web/seminars.html:47
+msgid "Week-end de 3 jours du Vendredi au Dimanche"
+msgstr "3 day WE from Friday to Sunday"
+
+#: templates/web/seminars.html:50
+msgid ""
+"\n"
+"\tMéditation: Retrouver la connection avec la Nature et nos Sens. Méditation "
+"sur les 5 élements (Terre. Air. Eau. Feu. Espace) et les 5 sens (Son. Vue. "
+"Odorat. Toucher. Goût)\n"
+"\t"
+msgstr ""
+
+#: templates/web/seminars.html:57
+msgid ""
+"\n"
+"\tThèmes des séminaires:\n"
+"\t"
+msgstr ""
+
+#: templates/web/seminars.html:62
+msgid "Relaxation"
+msgstr "Relaxation"
+
+#: templates/web/seminars.html:63
+msgid "Soins (Healing) "
+msgstr "Healing"
+
+#: templates/web/seminars.html:64
+msgid "Massage énergétique"
+msgstr ""
+
+#: templates/web/seminars.html:65
+msgid "Equilibrage des énergies"
+msgstr ""
+
+#: templates/web/seminars.html:66
+msgid "Yoga tibétain des énergies ( Yoga sur les 5 éléments)"
+msgstr ""
+
+#: templates/web/seminars.html:67
+msgid "La pensée positive."
+msgstr "Positive Thinking"
+
+#: templates/web/seminars.html:71
+msgid ""
+"Le week end de 3 jours, pension complète (repas sans viande et sans poissons)"
+msgstr ""
+
+#: templates/web/seminars.html:73
+msgid "Hébérgement et le programme: 450€."
+msgstr ""
+
+#: templates/web/seminars.html:74
+msgid "200€ d'arrhes à la réservation."
+msgstr ""
+
+#: templates/web/seminars.html:75
+msgid "Minimum: 2 personnes - Maximum: 8 personnes."
+msgstr ""
+
+#: templates/web/seminars.html:80
+msgid ""
+"\n"
+"\tSéminaires à la semaine du samedi au Samedi  pendant les mois de Juillet "
+"et Août.\n"
+"\tProchains séminaires disponibles à la semaine en 2012.\n"
+"\t"
+msgstr ""
+
+#: templates/web/seminars.html:86
+msgid "950 euros. Arrhes de réservation 400 euros."
+msgstr ""
+
+#: templates/web/seminars.html:87
+msgid "Minimum 3 pers. Maximum 8 pers."
+msgstr ""
+
+#: templates/web/seminars.html:95
+msgid "Dates"
+msgstr ""
+
+#: templates/web/testimonies.html:9
+#, fuzzy
+msgid "Témoignage"
+msgstr "Testimonies"
+
+#: templates/web/testimonies.html:9
+msgid "de "
+msgstr ""
+
+#: templates/web/testimonies.html:17 templates/web/testimonies.html.py:46
+msgid "Lisez les témoignages de"
+msgstr ""
+
+#: templates/web/testimonies.html:38
+msgid ""
+"\n"
+"\t\t\tRetrouvez dans cette section les témoignages bénévoles de personnes "
+"qui ont été soignées par Yogi. \n"
+"\t\t\tSi, vous aussi, vous voulez ajouter votre témoignage, n'hésitez pas à "
+"<a href=\"mailto:karma@energieduyogi.fr\">nous contacter</a>.\n"
+"\t\t\t"
+msgstr ""
+"Find in this section the voluntary testimonies of people which have been "
+"looked after by Yogi. If you too  want to add your testimony, do not "
+"hesitate to <a href=\"mailto:karma@energieduyogi.fr\">contact us</a>."
+
+#: templates/web/therapy.html:20
+msgid ""
+"\n"
+"\tLa thérapie de l'émotionel consiste à aider à évacuer les energies "
+"négatives, concentrées dans le canal central, perturbant les flux "
+"energetiques.\n"
+"\t"
+msgstr ""
+
+#: templates/web/therapy.html:25
+msgid "Enlever la vibration Émotionnelle négative"
+msgstr ""
+
+#: templates/web/therapy.html:27
+msgid ""
+"\n"
+"\tBien souvent, des symptomes physiques apparaissent dûs à des chocs "
+"emotionels tels que deuil, séparation, accident, traumatismes conscients ou "
+"inconscients dans\n"
+"\tl'enfance ou dans le ventre de la mère. \n"
+"\t"
+msgstr ""
+
+#: templates/web/therapy.html:35
+msgid ""
+"\n"
+"\tLe corps physique peut alors présenter des dysfonctionnements tels que "
+"sensations d'oppression, fatigue, manque d'énergie, mal de dos, sensations "
+"de gonflement au ventre, d'état d'anxiété, insomnies.\n"
+"\t"
+msgstr ""
+
+#: templates/web/therapy.html:42
+msgid ""
+"\n"
+"\tLa conséquence de ce flux énergétique déséquilibré nourrit le mal-etre: "
+"afflûts de pensées négatives et récurantes, angoisses, stress, émotions et "
+"perceptions négatives, manque de confiance en soi, phénomènes "
+"d'addictions...\n"
+"\t"
+msgstr ""
+
+#: templates/web/therapy.html:47
+msgid "Équilibrage des Énergies"
+msgstr ""
+
+#: templates/web/therapy.html:49
+msgid ""
+"\n"
+"\tHarmoniser et équilibrer les énergies du corps fera renaître  une  "
+"perception positive de notre Être mental et physique.\n"
+"\t"
+msgstr ""
+
+#: templates/web/therapy.html:56
+msgid ""
+"Pour des soins, <a href=\"/yogikarma\">Yogi Karma</a> reçoit au centre 2 "
+"jours par semaine sur Rendez-vous, les Mardi et Mercredi (sauf Juillet-Aout)"
+msgstr ""
+
+#: templates/web/therapy.html:60
+msgid "Entre 20 et 30 minutes <a href=\"/photos/soins\">la séance</a>"
+msgstr ""
+
+#~ msgid "Thérapie"
+#~ msgstr "Theraphy"
